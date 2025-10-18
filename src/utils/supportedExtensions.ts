@@ -451,6 +451,25 @@ export const SUPPORTED_EXTENSIONS: Array<ConfigurableExtension> = [
 			});
 		},
 	},
+	{
+		toolNames: ["terraform"],
+		extensionId: "hashicorp.terraform",
+		generateConfiguration: async ({
+			miseService,
+			tool,
+			miseConfig,
+			useShims,
+			useSymLinks,
+		}) => {
+			return configureSimpleExtension(miseService, {
+				configKey: "terraform.languageServer.terraform.path",
+				useShims,
+				useSymLinks,
+				tool,
+				miseConfig,
+			});
+		},
+	},
 ];
 
 export const CONFIGURABLE_EXTENSIONS_BY_TOOL_NAME = new Map<

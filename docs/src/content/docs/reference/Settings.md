@@ -86,6 +86,7 @@ List of extensions that should not be configured automatically.
 - `joselitofilho.ginkgotestexplorer`
 - `bufbuild.vscode-buf`
 - `biomejs.biome`
+- `hashicorp.terraform`
 
 ---
 
